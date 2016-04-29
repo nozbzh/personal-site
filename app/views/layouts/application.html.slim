@@ -1,17 +1,17 @@
 doctype html
 html
   head
-    title MyTitle
+    title Noe Stauffert
     = csrf_meta_tags
     = action_cable_meta_tag
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
     = stylesheet_link_tag    'application', media: 'all'
 
-  body class="#{controller_name} #{action_name}"
-    = render 'shared/header'
-    = render 'shared/notifications'
+  body class="#{controller_name} #{action_name} bg-grey"
     .col-md-8.col-md-offset-2
+      = render 'shared/navbar'
+      = render 'shared/notifications'
       = yield
       = render 'shared/footer'
       = javascript_include_tag 'application'
