@@ -15,11 +15,22 @@
   background: #4a4a4a;
 }
 .bg-grey {
-  background: #aeaeae;
+  background: #EEEEEE;
 }
 .bg-blue {
   background: #00a3e1;
 }
 .bg-dark-blue {
   background: #3b5998;
+}
+.padded-top {
+  padding-top: 10em;
+}
+.normal-link a {
+  text-decoration: none;
+  color: $gray-dark;
+  &:hover {
+    text-decoration: none;
+    color: $gray-dark;
+  }
 }

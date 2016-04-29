@@ -1,30 +1,29 @@
-.navbar-wagon
-  .container
-    .row
-      .col-xs-10.col-sm-6 style="padding-left: 0 !important"
+nav.navbar.navbar-default.navbar-fixed-top.navbar-wagon role="navigation"
+  /! Brand and toggle get grouped for better mobile display
+  .row
+    .col-xs-9.col-sm-5.normal-link
+      a href=root_path
         h1 NOE STAUFFERT
         p
           | Web developer
-      /! Right Navigation
-      .col-xs-2.col-sm-6
-        .navbar-wagon-right.hidden-xs.hidden-sm
-          ul.list-inline.pull-right
-            li =link_to "home", root_path
-            li =link_to "about", about_path
-            li =link_to "resume", resume_path
-            li
-              a href="https://github.com/nozbzh" target="_blank" github
-            li =link_to "blog", blog_path
-
-
-        /! Dropdown list appearing on mobile only
-        .navbar-wagon-item.hidden-md.hidden-lg
-          .dropdown
-            i.fa.fa-bars.dropdown-toggle data-toggle="dropdown"
-            ul.dropdown-menu.dropdown-menu-right.navbar-wagon-dropdown-menu
-              li =link_to "home", root_path
-              li =link_to "about", about_path
-              li =link_to "resume", resume_path
-              li
-                a href="https://github.com/nozbzh" target="_blank" github
-              li =link_to "blog", blog_path
+    .col-xs-3.col-sm-7
+      .navbar-header
+        button.navbar-toggle.collapsed data-target="#navbar-menu" data-toggle="collapse" type="button"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      /! Collect the nav links, forms, and other content for toggling
+      #navbar-menu.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right.sticky-bottom
+          li class="#{params[:action] == 'home' ? 'current' : ''}"
+            =link_to "home", root_path
+          li class="#{params[:action] == 'about' ? 'current' : ''}"
+            =link_to "about", about_path
+          li class="#{params[:action] == 'resume' ? 'current' : ''}"
+            =link_to "resume", resume_path
+          li
+            a href="https://github.com/nozbzh" target="_blank" github
+          li class="#{params[:action] == 'blog' ? 'current' : ''}"
+            =link_to "blog", blog_path
+.padded-top
