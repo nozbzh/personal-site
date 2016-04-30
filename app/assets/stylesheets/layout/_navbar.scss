@@ -142,7 +142,16 @@ $navbar-profile-border-width: 2px;
   .navbar-wagon {
     .sticky-bottom {
       position: absolute;
-      bottom: -125px;
+      bottom: -163px;
+      right: 15px;
+    }
+  }
+}
+@media screen and (min-width: 892px) {
+  .navbar-wagon {
+    .sticky-bottom {
+      position: absolute;
+      bottom: -118px;
       right: 15px;
     }
   }

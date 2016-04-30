@@ -15,5 +15,7 @@ html
           = render 'shared/navbar'
           = render 'shared/notifications'
           = yield
+      .row
+        .col-md-10.col-md-offset-1
           = render 'shared/footer'
-          = javascript_include_tag 'application'
+    = javascript_include_tag 'application'

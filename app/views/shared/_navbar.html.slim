@@ -1,7 +1,7 @@
 nav.navbar.navbar-default.navbar-fixed-top.navbar-wagon role="navigation"
   /! Brand and toggle get grouped for better mobile display
   .row
-    .col-xs-9.col-sm-5.normal-link
+    .col-xs-9.col-sm-5.no-hover
       a href=root_path
         h1 NOE STAUFFERT
         p
@@ -16,14 +16,14 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-wagon role="navigation"
       /! Collect the nav links, forms, and other content for toggling
       #navbar-menu.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right.sticky-bottom
-          li class="#{params[:action] == 'home' ? 'current' : ''}"
+          li class="#{action_name == 'home' ? 'current' : ''}"
             =link_to "home", root_path
-          li class="#{params[:action] == 'about' ? 'current' : ''}"
+          li class="#{action_name == 'about' ? 'current' : ''}"
             =link_to "about", about_path
-          li class="#{params[:action] == 'resume' ? 'current' : ''}"
+          li class="#{action_name == 'resume' ? 'current' : ''}"
             =link_to "resume", resume_path
           li
             a href="https://github.com/nozbzh" target="_blank" github
-          li class="#{params[:action] == 'blog' ? 'current' : ''}"
+          li class="#{action_name == 'blog' ? 'current' : ''}"
             =link_to "blog", blog_path
 .padded-top
