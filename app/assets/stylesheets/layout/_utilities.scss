@@ -9,21 +9,6 @@
   padding-top: 5em;
   padding-bottom: 5em;
 }
-@media screen and (max-width: 768px) {
-  .padded-top {
-    padding-top: 7em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .padded-top {
-    padding-top: 10em;
-  }
-}
-@media screen and (min-width: 892px) {
-  .padded-top {
-    padding-top: 7em;
-  }
-}
 
 .padded-top-xs {
   padding-top: 1em;
@@ -31,6 +16,12 @@
 
 .padded-bottom {
   padding-bottom: 2em;
+}
+
+// Margins
+.neg-margin {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
 }
 
 // Backgrounds

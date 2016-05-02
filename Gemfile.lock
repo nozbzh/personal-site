@@ -281,6 +281,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   capybara
+  coderay
   database_cleaner
   devise!
   factory_girl_rails
