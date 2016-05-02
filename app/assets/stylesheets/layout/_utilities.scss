@@ -48,3 +48,22 @@
 .justify {
   text-align: justify;
 }
+
+
+// CodeRay
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  margin-top: 10px;
+  width: 7px;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  height: 10px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
