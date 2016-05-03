@@ -1,10 +1,6 @@
 class PagesController < ApplicationController
-  def home
-  end
-  def about
-  end
-  def resume
-  end
-  def blog
+  def pdf
+    pdf = Rails.root.join('public/pdf/noe-stauffert.pdf')
+    send_file(pdf, filename: 'noe-stauffert.pdf', type: 'application/pdf', disposition: :inline)
   end
 end
