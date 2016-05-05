@@ -20,6 +20,11 @@ gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'autoprefixer-rails'
 gem 'coderay'
 
+gem 'activeadmin', github: 'activeadmin'
+gem 'redactor-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
