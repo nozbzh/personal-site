@@ -1,15 +1,21 @@
 # encoding: utf-8
 class RedactorRailsDocumentUploader < CarrierWave::Uploader::Base
-  include RedactorRails::Backend::CarrierWave
 
-  # storage :fog
-  storage :file
+  storage :fog
+  # storage :file
 
-  def store_dir
-    "system/redactor_assets/documents/#{model.id}"
+  def filename
+    "#{secure_token}.#{file.extension}" if original_filename.present?
   end
 
   def extension_white_list
     RedactorRails.document_file_types
+  end
+
+  protected
+
+  def secure_token
+    var = :"@#{mounted_as}_secure_token"
+    model.instance_variable_get(var) or model.instance_variable_set(var, SecureRandom.uuid)
   end
 end

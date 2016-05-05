@@ -2,7 +2,6 @@ CarrierWave.configure do |config|
 
   config.cache_dir        = 'uploads/tmp'
   config.fog_provider     = 'fog/aws'
-  config.fog_public       = false
   config.fog_directory    = ENV["AWS_S3_BUCKET_NAME"]
 
   config.fog_credentials = {

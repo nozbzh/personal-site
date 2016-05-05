@@ -1,3 +1,10 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
-// You can use CoffeeScript in this file: http://coffeescript.org/
+$(".posts.index").ready(function() {
+  $(".line-numbers > a").text(function(_, oldText) {
+    return oldText + '| ';
+  });
+});
+
+
+$(".posts.show").ready(function() {
+  $(".redact img").addClass("img-responsive");
+});
