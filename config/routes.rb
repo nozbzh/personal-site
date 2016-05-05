@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get 'resume', to: 'pages#resume'
   get 'blog', to: 'pages#blog'
   get 'pdf', to: 'pages#pdf'
+  get 'ekosea', to: 'pages#ekosea'
+  get 'lesalon', to: 'pages#lesalon'
+  get 'komodo', to: 'pages#komodo'
 end

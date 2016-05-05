@@ -10,6 +10,7 @@ gem 'devise', github: 'plataformatec/devise'
 gem 'redis'
 
 gem 'slim'
+gem 'redcarpet'
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
