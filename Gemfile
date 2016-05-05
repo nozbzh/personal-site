@@ -22,8 +22,9 @@ gem 'coderay'
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'redactor-rails'
-gem 'carrierwave'
+gem 'carrierwave', git: 'https://github.com/carrierwaveuploader/carrierwave.git'
 gem 'mini_magick'
+gem 'fog-aws'
 
 group :development, :test do
   gem 'binding_of_caller'
