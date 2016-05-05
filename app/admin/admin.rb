@@ -18,7 +18,7 @@ ActiveAdmin.register Admin do
 
   form do |f|
     f.inputs "Admin Details" do
-      f.input :email, input_html: {class: 'redactor'}
+      f.input :email
       f.input :password
       f.input :password_confirmation
     end

@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'resume', to: 'pages#resume'
-  get 'blog', to: 'pages#blog'
+  get 'blog', to: 'posts#index'
   get 'pdf', to: 'pages#pdf'
   get 'ekosea', to: 'pages#ekosea'
   get 'lesalon', to: 'pages#lesalon'
   get 'komodo', to: 'pages#komodo'
+
+  resources :posts, only: [:new, :create, :show]
 end
