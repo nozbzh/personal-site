@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get 'lesalon', to: 'pages#lesalon'
   get 'komodo', to: 'pages#komodo'
 
-  resources :posts, only: [:new, :create, :show]
+  resources :posts, only: :show
 end
