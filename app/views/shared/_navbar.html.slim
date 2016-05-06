@@ -16,8 +16,8 @@ nav.navbar.navbar-default.navbar-wagon.neg-margin role="navigation"
       /! Collect the nav links, forms, and other content for toggling
       #navbar-menu.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right.sticky-bottom
-          li class="#{action_name == 'home' ? 'current' : ''}"
-            =link_to "home", root_path
+          li class="#{controller_name == 'projects' ? 'current' : ''}"
+            =link_to "work", root_path
           li class="#{action_name == 'about' ? 'current' : ''}"
             =link_to "about", about_path
           li class="#{action_name == 'resume' ? 'current' : ''}"

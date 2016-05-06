@@ -5,3 +5,8 @@
 //= require redactor-rails
 //= require redactor-rails/plugins
 //= require_tree .
+
+$(document).ready(function() {
+  $(".redact img").addClass("img-responsive");
+  $(".redact a").attr('target', '_blank');
+});

@@ -1,0 +1,10 @@
+.row
+  - @projects.each do |project|
+    .col-xs-12.bottom-lined
+      a href=project_path(project)
+        img.img-responsive src=project.image.content
+        h3 =project.name
+      .redact
+        p =raw(project.summary)
+      hr
+
