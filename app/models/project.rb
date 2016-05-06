@@ -5,4 +5,8 @@ class Project < ApplicationRecord
     order :priority_order
   end
   scope :published, -> { ordered.where(published: true) }
+
+  def to_param
+    "#{id.to_s}-#{name.parameterize}" rescue nil
+  end
 end
