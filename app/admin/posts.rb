@@ -35,8 +35,8 @@ ActiveAdmin.register Post do
   end
 
   # publish post
-  action_item only: [:show, :edit, :new], if: -> { post.published == false } do
-    link_to "Publish", url_for(action: :publish)
+  action_item only: [:show, :edit], if: -> { post.published == false } do
+    link_to("Publish", action: :publish)
   end
 
   member_action :publish do
@@ -52,8 +52,8 @@ ActiveAdmin.register Post do
   end
 
   # unpublish post
-  action_item only: [:show, :edit, :new], if: -> { post.published == true } do
-    link_to "Unpublish", url_for(action: :unpublish)
+  action_item only: [:show, :edit], if: -> { post.published == true } do
+    link_to("Unpublish", action: :unpublish)
   end
 
   member_action :unpublish do
