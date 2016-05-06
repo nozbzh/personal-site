@@ -2,7 +2,7 @@
 .row
   - @posts.each do |post|
     .col-xs-12.bottom-lined
-      a href=post_path(post)
+      a href=post_path(post.slug)
         h3 =post.title
         span =post.created_at.strftime('%B %e, %Y')
       .redact

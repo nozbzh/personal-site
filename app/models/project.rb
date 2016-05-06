@@ -1,12 +1,21 @@
 class Project < ApplicationRecord
+
   validates :name, :summary, :content, :priority_order, :image, presence: true
+
   mount_uploader :image, ProjectImageUploader
+
   scope :ordered, -> do
     order :priority_order
   end
+
   scope :published, -> { ordered.where(published: true) }
 
-  def to_param
-    "#{id.to_s}-#{name.parameterize}" rescue nil
+  before_create :set_slug
+  before_update :set_slug
+
+  private
+
+  def set_slug
+    self.slug = self.name.parameterize
   end
 end
