@@ -3,7 +3,7 @@
     .col-xs-12.bottom-lined
       a href=post_path(post)
         h3 =post.title
-        span= post.created_at.strftime('%B %e, %Y')
+        span =post.created_at.strftime('%B %e, %Y')
       p
         =raw(post.content.truncate(300))
       hr
