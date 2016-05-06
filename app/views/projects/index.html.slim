@@ -1,11 +1,13 @@
-.row.padded-top
-  - @projects.each do |project|
-    .col-md-4
-      .col-xs-12
-        a href=project_path(project)
-          img.padded-bottom.img-responsive.center-block src=project.image.content
-          h3 =project.name
-      .col-xs-12.bottom-lined
-        .redact
-          p =raw(project.summary)
-        hr
+.row
+  h2 Hi, I'm No&eacute;. I'm a Rails developer. Check out some of my projects:
+  .padded-top
+    - @projects.each do |project|
+      .col-md-4
+        .col-xs-12
+          a href=project_path(project)
+            img.padded-bottom.img-responsive.center-block src=project.image.content
+            h3 =project.name
+        .col-xs-12.bottom-lined
+          .redact
+            p =raw(project.summary)
+          hr
