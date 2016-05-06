@@ -1,4 +1,10 @@
-ul
+.row
   - @posts.each do |post|
-    li
-      a href=post_path(post) =post.title
+    .col-xs-12.bottom-lined
+      a href=post_path(post)
+        h3 =post.title
+        span= post.created_at.strftime('%d %b %Y')
+      p
+        =raw(post.content.truncate(300))
+      hr
+
