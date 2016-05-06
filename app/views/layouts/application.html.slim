@@ -1,7 +1,9 @@
 doctype html
 html
   head
-    title Noe Stauffert
+    title
+      = if content_for?(:title) then yield(:title) + ' | '
+      | Noe Stauffert
     = csrf_meta_tags
     = action_cable_meta_tag
     meta name="viewport" content="width=device-width, initial-scale=1"
