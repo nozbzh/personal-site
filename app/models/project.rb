@@ -11,7 +11,6 @@ class Project < ApplicationRecord
   scope :published, -> { ordered.where(published: true) }
 
   before_create :set_slug
-  before_update :set_slug
 
   private
 
