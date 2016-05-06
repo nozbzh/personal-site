@@ -24,6 +24,6 @@ nav.navbar.navbar-default.navbar-wagon.neg-margin role="navigation"
             =link_to "resume", resume_path
           li
             a href="https://github.com/nozbzh" target="_blank" github
-          li class="#{action_name == 'blog' ? 'current' : ''}"
+          li class="#{controller_name == 'posts' ? 'current' : ''}"
             =link_to "blog", blog_path
 .padded-top
