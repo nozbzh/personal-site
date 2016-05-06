@@ -1,10 +1,21 @@
-.row
-  - @projects.each do |project|
-    .col-xs-12.bottom-lined
-      a href=project_path(project)
-        img.img-responsive src=project.image.content
-        h3 =project.name
-      .redact
-        p =raw(project.summary)
-      hr
+/ .row
+/   - @projects.each do |project|
+/     .col-xs-12.bottom-lined
+/       a href=project_path(project)
+/         img.img-responsive src=project.image.content
+/         h3 =project.name
+/       .redact
+/         p =raw(project.summary)
+/       hr
 
+.row.padded-top
+  - @projects.each do |project|
+    .col-md-4
+      .col-xs-12
+        a href=project_path(project)
+          img.padded-bottom.img-responsive.center-block.md-size src=project.image.content
+          h3 =project.name
+      .col-xs-12.bottom-lined
+        .redact
+          p =raw(project.summary)
+        hr
