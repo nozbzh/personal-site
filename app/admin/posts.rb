@@ -11,6 +11,7 @@ ActiveAdmin.register Post do
       link_to post.title, admin_post_path(post)
     end
     column :published
+    actions
   end
 
   show do
