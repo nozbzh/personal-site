@@ -27,3 +27,9 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .img-responsive {
+    max-width: 66% !important;
+  }
+}
