@@ -20,7 +20,7 @@ gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'autoprefixer-rails'
 gem 'coderay'
 
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin'#, github: 'activeadmin'
 gem 'redactor-rails'
 gem 'carrierwave', git: 'https://github.com/carrierwaveuploader/carrierwave.git'
 gem 'mini_magick'
@@ -48,6 +48,6 @@ group :development, :test do
   # gem 'database_cleaner'
 end
 
-group :production do
-  gem 'rails_12factor'
-end
+# group :production do
+#   gem 'rails_12factor'
+# end
