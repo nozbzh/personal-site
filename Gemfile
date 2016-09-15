@@ -38,14 +38,14 @@ group :development, :test do
 
   gem 'quiet_assets'
 
-  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
-    gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
-  end
-  gem 'rails-controller-testing'
-  gem 'faker'
-  gem 'factory_girl_rails'
-  gem 'capybara'
-  gem 'database_cleaner'
+  # %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+  #   gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+  # end
+  # gem 'rails-controller-testing'
+  # gem 'faker'
+  # gem 'factory_girl_rails'
+  # gem 'capybara'
+  # gem 'database_cleaner'
 end
 
 group :production do
