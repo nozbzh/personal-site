@@ -1,24 +1,5 @@
-## README
+# personal-site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As the name suggests, this is the source code for my [webiste](http://www.noestauffert.com). It was originally deployed to Heroku and was later modified to be deployed to AWS Elastic Beanstalk.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It's a simple Rails app with activadmin allowing to dynamically create content for projects and blog posts. The admin side uses Redactor as its WYSIWYG editor, which lets me easily embed images in my posts.
